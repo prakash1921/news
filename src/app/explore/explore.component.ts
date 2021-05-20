@@ -88,7 +88,7 @@ export class ExploreComponent implements OnInit {
   }
   detailsPage(id) {
     console.log("id", id);
-    this.router.navigateByUrl('explore/details/' + id)
+    this.router.navigateByUrl('home/explore/details/' + id)
 
   }
 

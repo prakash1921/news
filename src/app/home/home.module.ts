@@ -9,6 +9,8 @@ import { FollowComponent } from '../follow/follow.component';
 import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
 import { HeadlinesComponent } from '../headlines/headlines.component';
 import { ExploreComponent } from '../explore/explore.component';
+import { ExploredetailsComponent } from '../explore/exploredetails/exploredetails.component';
+import { HeadlinesDetailsComponent } from '../headlines/headlines-details/headlines-details.component';
 @NgModule({
   
   imports: [
@@ -23,7 +25,9 @@ import { ExploreComponent } from '../explore/explore.component';
     FollowComponent,
     PagenotfoundComponent,
     ExploreComponent,
-    HeadlinesComponent
+    HeadlinesComponent,
+    ExploredetailsComponent,
+    HeadlinesDetailsComponent
     
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA ],

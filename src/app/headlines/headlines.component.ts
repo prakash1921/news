@@ -58,7 +58,7 @@ export class HeadlinesComponent implements OnInit {
   }
   detailsPage(id){
 console.log("id",id);
-this.router.navigateByUrl('headline/details/' + id)
+this.router.navigateByUrl('home/headline/details/' + id)
 
   }
 }

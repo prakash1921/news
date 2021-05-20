@@ -21,7 +21,6 @@ import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { ExploredetailsComponent } from './explore/exploredetails/exploredetails.component';
 import { LoginComponent } from './login/login.component';
 import { HomeModule } from './home/home.module';
-import { environment } from '../environments/environment';
 // import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
@@ -40,7 +39,15 @@ import { environment } from '../environments/environment';
     BrowserAnimationsModule,
     ToastrModule.forRoot() ,
     NgxPaginationModule ,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp( {
+      apiKey: "AIzaSyDpIgXXk7t09gBclR-qYyqp1A-F_HFCQR4",
+      authDomain: "news-c3236.firebaseapp.com",
+      projectId: "news-c3236",
+      storageBucket: "news-c3236.appspot.com",
+      messagingSenderId: "552334450318",
+      appId: "1:552334450318:web:c02781424ce4aa4d3773df",
+      measurementId: "G-46LN3B095C"
+    }),
     ReactiveFormsModule,
     CommonModule,
     FormsModule,
